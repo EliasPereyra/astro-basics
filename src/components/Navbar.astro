@@ -1,8 +1,8 @@
 <nav>
   <ul>
     <a href="/"><li>Home</li></a>
-    <a href="#"><li>About me</li></a>
-    <a href="#"><li>Contact</li></a>
+    <a href="/about"><li>About me</li></a>
+    <a href="#" ><li>Contact</li></a>
   </ul>
 </nav>
 
@@ -20,10 +20,16 @@
     display: flex;
     gap: 1em;
     justify-content: center;
+    position: relative;    
   }
 
   li {
     list-style: none;
+  }
+
+  nav {
+    position: sticky;
+    min-width: 100%;
   }
 </style>
 

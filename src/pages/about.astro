@@ -1,0 +1,52 @@
+---
+  import Layout from "../layouts/Layout.astro"
+  import Navbar from "../components/Navbar.astro"
+---
+
+<Layout title="About me">
+  <Navbar />
+  <main>
+    <h2>About me</h2>
+    <figure>
+      <img src="/computers.webp" alt="Foto" />
+      <footer><small>this is me</small></footer>
+    </figure>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, molestias!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam fugit animi reprehenderit fuga, corrupti quasi quae quos tempore voluptatibus quia.</p>
+  </main>
+</Layout>
+
+<style>
+  h2 {
+    color: #fff;
+  }
+  main {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1em;
+    max-width: 60ch;
+  }
+
+  img {
+    width: 10em;
+    height: 10em;
+    border-radius: 20px;
+    object-fit: contain
+  }
+
+  p {
+    color: #fff;
+    text-align: center;
+    min-width: 60ch;
+  }
+
+  footer {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+  }
+</style>
